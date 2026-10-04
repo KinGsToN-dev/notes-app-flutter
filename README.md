@@ -1,17 +1,61 @@
-# notes_app_flutter
+# 📝 Notes App — Full-Stack CRUD
 
-A new Flutter project.
+Полноценное приложение для заметок: **Flutter + FastAPI + SQLite + JWT**.
 
-## Getting Started
+## ✨ Возможности
 
-This project is a starting point for a Flutter application.
+- 🔐 Регистрация и вход (JWT, bcrypt)
+- 👤 Изоляция данных: каждый пользователь видит только свои заметки
+- 📝 CRUD: создание, чтение, обновление, удаление
+- 🔍 Поиск по заголовку и тексту
+- 🔀 Сортировка: по дате (↑↓) и по алфавиту (А→Я, Я→А)
+- 🌙 Светлая / тёмная тема
+- 🎬 Анимации, свайп-удаление, SnackBar-уведомления
 
-A few resources to get you started if this is your first Flutter project:
+## 🏗️ Стек
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+| Слой | Технологии |
+|---|---|
+| Frontend | Flutter, Dart, http, shared_preferences, intl |
+| Backend | Python 3.12, FastAPI, SQLModel, python-jose, bcrypt |
+| БД | SQLite (легко заменить на PostgreSQL) |
+| Тесты | pytest (18 тестов), flutter_test (5 тестов) |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Быстрый старт
+
+### Backend
+```bash
+cd backend
+pip install fastapi uvicorn sqlmodel "python-jose[cryptography]" bcrypt email-validator
+uvicorn main:app --reload
+API будет доступно на http://127.0.0.1:8000, документация — http://127.0.0.1:8000/docs
+
+Frontend
+bash
+flutter pub get
+flutter run -d chrome
+🧪 Тесты
+bash
+# Backend
+cd backend
+python -m pytest
+
+# Frontend
+flutter test
+📁 Структура
+text
+notes_app_flutter/
+├── backend/
+│   ├── main.py              # FastAPI приложение
+│   └── tests/               # pytest тесты
+├── lib/
+│   ├── models/              # Note
+│   ├── services/            # API, TokenStore
+│   ├── screens/             # AuthScreen, NotesPage
+│   └── theme/               # AppTheme
+└── test/                    # flutter_test
+📸 Скриншоты
+(добавьте сюда скриншоты тёмной и светлой темы)
+
+📄 Лицензия
+MIT
