@@ -2,6 +2,13 @@
 
 Полноценное приложение для заметок: **Flutter + FastAPI + SQLite + JWT**.
 
+# 📝 Notes App — Full-Stack CRUD
+
+![Backend Tests](https://github.com/KinGsToN-dev/notes-app-flutter/actions/workflows/backend-tests.yml/badge.svg)
+![Flutter Tests](https://github.com/KinGsToN-dev/notes-app-flutter/actions/workflows/flutter-tests.yml/badge.svg)
+
+Полноценное приложение для заметок: **Flutter + FastAPI + SQLite + JWT**.
+...
 ## ✨ Возможности
 
 - 🔐 Регистрация и вход (JWT, bcrypt)
