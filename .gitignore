@@ -1,0 +1,56 @@
+# ==================
+# Python
+# ==================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+
+# ==================
+# Базы данных
+# ==================
+*.db
+*.sqlite
+*.sqlite3
+backend/notes*.db
+notes*.db
+
+# ==================
+# Flutter / Dart
+# ==================
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+
+# ==================
+# IDE
+# ==================
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+*.swp
+*.swo
+
+# ==================
+# OS
+# ==================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==================
+# Прочее
+# ==================
+*.log
+.env
+.env.local
