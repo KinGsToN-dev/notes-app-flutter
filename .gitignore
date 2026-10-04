@@ -54,3 +54,8 @@ desktop.ini
 *.log
 .env
 .env.local
+# Virtual environments
+.venv/
+.venv_test/
+venv/
+env/

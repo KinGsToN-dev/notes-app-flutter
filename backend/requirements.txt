@@ -1,0 +1,21 @@
+# Notes API — Python dependencies
+# Установка: pip install -r requirements.txt
+# Python: 3.12+
+
+# Web framework & server
+fastapi==0.128.8
+uvicorn[standard]==0.54.0
+
+# ORM & validation
+sqlmodel==0.0.47
+pydantic==2.12.5
+
+# Auth: JWT + bcrypt
+python-jose[cryptography]==3.5.0
+bcrypt==5.0.0
+python-multipart==0.0.32
+email-validator==2.3.0
+
+# Tests
+pytest==9.1.1
+httpx==0.28.1
